@@ -1,5 +1,9 @@
+@host = localhost
+@port = 3000
+
+
 ### get kategória
-GET http://localhost:3000/categories
+GET http://{{host}}:{{port}}/categories
 Content-Type: application/json
 
 ### get kategória by id
@@ -77,3 +81,89 @@ Content-Type: application/json
 ### get forgalom
 GET http://localhost:3000/statistics
 Content-Type: application/json
+
+
+
+
+
+
+
+
+
+
+### GET customers 
+GET http://localhost:3000/customers 
+Content-Type: application/json
+
+### POST customer 
+POST http://localhost:3000/customers
+Content-Type: application/json
+
+{
+"vevoNev": "András"
+} 
+### GET customer by ID 
+GET http://localhost:3000/customers/2
+Content-Type: application/json 
+
+
+### UPDATE customer by ID 
+PATCH http://localhost:3000/customers/2
+Content-Type: application/json
+
+{
+"vevoNev": "Jenő"
+}
+
+### DELETE customer by ID 
+DELETE http://localhost:3000/customers/1 
+Content-Type: application/json
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### GET products
+GET http://localhost:3000/products
+Content-Type: application/json
+
+### GET one product by id
+GET http://localhost:3000/products/2
+Content-Type: application/json
+
+### DELETE product by id
+DELETE http://localhost:3000/products/1
+Content-Type: application/json
+
+### POST new product
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "termek":"Mákos bejgli",
+    "kategoriaNev":"Desszertek",
+    "egyseg": "szelet",
+    "nettoAr": 200
+}
+
+### UPDATE product by id
+PATCH http://localhost:3000/products/2
+Content-Type: application/json
+
+{
+    "termek":"Alma",
+    "kategoriaNev":"Ételek",
+    "egyseg": "db",
+    "nettoAr": 2
+}
