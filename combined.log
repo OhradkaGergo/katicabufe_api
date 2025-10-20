@@ -1,0 +1,27 @@
+{"level":"info","message":"dhfhd","service":"user-service"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service"}
+{"level":"info","message":"Server is running on {{url}}","service":"user-service"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service"}
+{"level":"info","message":"Server is running on http://localhost:3000","service":"user-service"}
+undefined
+undefined
+[[object Object]] undefined: undefined
+[2025-10-20 12:08:12] info: Server is running on http://localhost:3000
+[2025-10-20 12:08:29] [32minfo[39m: Server is running on http://localhost:3000
+[2025-10-20 12:09:30] [32minfo[39m: Server is running on http://localhost:3000
+[2025-10-20 12:09:33] [32minfo[39m: Server is running on http://localhost:3000
+[2025-10-20 12:10:01] [32minfo[39m: Server is running on http://localhost:3000
+[2025-10-20 12:10:23] [32minfo[39m: Server is running on http://localhost:3000
+[2025-10-20 12:12:28] [32minfo[39m: Server is running on http://localhost:3000
+[2025-10-20 12:14:43] [32minfo[39m: Server is running on http://localhost:3000
+[2025-10-20 12:17:35] [32minfo[39m: Server is running on http://localhost:3000
+[2025-10-20 12:20:19] [32minfo[39m: Server is running on http://localhost:3000
+[2025-10-20 12:20:20] [32minfo[39m: Server is running on http://localhost:3000
+[2025-10-20 12:21:19] [32minfo[39m: Server is running on http://localhost:3000
+[2025-10-20 12:24:06] [32minfo[39m: Server is running on http://localhost:3000
+[2025-10-20 12:26:13] [32minfo[39m: Server is running on http://localhost:3000
+[2025-10-20 12:26:22] [32minfo[39m: [GET /categories] -> [object Object],[object Object],[object Object]
+[2025-10-20 12:26:52] [32minfo[39m: Server is running on http://localhost:3000
+[2025-10-20 12:27:04] [32minfo[39m: Server is running on http://localhost:3000
+[2025-10-20 12:27:08] [32minfo[39m: [GET /categories] -> 3 rekord küldves
+[2025-10-20 12:27:42] [32minfo[39m: Server is running on http://localhost:3000

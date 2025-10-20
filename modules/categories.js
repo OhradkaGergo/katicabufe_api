@@ -1,5 +1,7 @@
 const express = require('express')
 const router = express.Router()
+const logger = require('../utils/logger')
+
 
 const pool = require('../utils/database')
 
@@ -7,6 +9,8 @@ const pool = require('../utils/database')
 router.get('/', (req, res) => {
     pool.query('SELECT * FROM kategoria', (error, results) => {
         if (error) return res.status(500).json({ error: error.message })
+        logger.info(`[GET /categories] -> ${results.length} rekord küldves`)
+        
         res.status(200).json(results)
     })
 })

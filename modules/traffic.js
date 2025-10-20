@@ -16,6 +16,7 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
     let id = req.params.id
     pool.query(`SELECT * FROM forgalom
+
         WHERE forgalom.id=?`, [id], (error, results) => {
         if (error) return res.status(500).json({ error: error.message })
         res.status(200).json(results)

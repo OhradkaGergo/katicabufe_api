@@ -1,9 +1,10 @@
-@host = localhost
+@host = http://localhost
 @port = 3000
+@url = {{host}}:{{port}}
 
 
 ### get kategória
-GET http://{{host}}:{{port}}/categories
+GET {{url}}/categories
 Content-Type: application/json
 
 ### get kategória by id
