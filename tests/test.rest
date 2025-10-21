@@ -52,11 +52,11 @@ POST http://localhost:3000/traffic
 Content-Type: application/json
 
 {
-    "termek": "asd",
-    "vevo": "valaki",
-    "kategoriaId": 2,
-    "egyseg": "db",
-    "nettoar": 42069,
+    "termek": "Vodka",
+    "vevo": "Orosz",
+    "kategoriaId": 3,
+    "egyseg": "dl",
+    "nettoar": 700,
     "mennyiseg": 3,
     "kiadva": 1
 }
@@ -66,11 +66,17 @@ DELETE http://localhost:3000/traffic/259
 Content-Type: application/json
 
 ### update new traffic
-PATCH http://localhost:3000/traffic/3
+PATCH http://localhost:3000/traffic/262
 Content-Type: application/json
 
 {
-    "nev": "Dessz ertek"
+    "termek": "Wawo",
+    "vevo": "Owaw",
+    "kategoriaId": 2,
+    "egyseg": "dl",
+    "nettoar": 515,
+    "mennyiseg": 3,
+    "kiadva": 1
 }
 
 
