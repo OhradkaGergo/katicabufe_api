@@ -40,7 +40,7 @@ Content-Type: application/json
 
 
 ### get forgalom
-GET http://localhost:3000/traffic
+GET {{url}}/traffic
 Content-Type: application/json
 
 ### get forgalom by id

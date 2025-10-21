@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const pool = require('../utils/database');
+const { query } = require('../utils/database')
 
 router.get('/', (req, res) => {
     const summaryQuery = `

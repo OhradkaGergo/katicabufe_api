@@ -1,13 +1,13 @@
 const express = require("express")
 const router = express.Router()
-const pool = require('../utils/database')
+const { query } = require('../utils/database')
 
 // GET all products
 router.get('/', (req, res) => {
   pool.query('SELECT * FROM termek', (error, results) => {
     if (error) return res.status(500).json({ error: error.message })
     res.status(200).json(results)
-  });
+  }, req);
 })
 
 // GET one product by id
@@ -16,7 +16,7 @@ router.get('/:id', (req, res) => {
   pool.query(`SELECT * FROM termek WHERE termekID = ?`, [id], (error, results) => {
     if (error) return res.status(500).json({ error: error.message })
     res.status(200).json(results)
-  });
+  }, req);
 })
 
 // DELETE product by id
@@ -25,7 +25,7 @@ router.delete('/:id', (req, res) => {
   pool.query(`DELETE FROM termek WHERE termekID = ?`, [id], (error, results) => {
     if (error) return res.status(500).json({ error: error.message })
     res.status(200).json(results)
-  });
+  }, req);
 })
 
 // UPDATE product by id
@@ -38,8 +38,7 @@ router.patch('/:id', (req, res) => {
     (error, results) => {
       if (error) return res.status(500).json({ error: error.message })
       res.status(200).json(results)
-    }
-  );
+    }, req);
 })
 
 // POST new product
@@ -48,7 +47,7 @@ router.post('/', (req, res) => {
   pool.query(`INSERT INTO termek (termek,kategoriaNev,egyseg,nettoAr) VALUES (?,?,?,?)`, [termek, kategoriaNev, egyseg, nettoAr], (error, results) => {
     if (error) return res.status(500).json({ error: error.message })
     res.status(200).json(results)
-  });
+  }, req);
 })
 
 module.exports = router
